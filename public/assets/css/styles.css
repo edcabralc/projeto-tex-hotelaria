@@ -30,7 +30,7 @@ span {
   font-weight: 300;
 }
 
-header {
+header{
   /* padding-left: 5%; */
 }
 
@@ -177,8 +177,146 @@ color: #fff;
 /* end Sessão HERO */
 
 
+/* CSS - SOBRE HOTEL-PISCINA */
+
+.sobre-hotel{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #1D9371;
+  margin-top: 40px;
+  color: #1D9371;
+}
+
+
+.section-titulo{
+  padding-top: 50px;
+}
+.section-titulo h1 em{
+  color: #050505;
+}
+.section-titulo,
+.section-desc{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+.section-desc{
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
+  }
+  .section-body{
+      max-width: 1140px;
+      margin: auto;
+      padding-bottom: 40px;
+      display: flex;
+  }
+  .section-sobre{
+      display: flex;
+  }
+  .section--esquerda{
+      flex: 1;
+  
+      margin-left: 20px;
+  }
+  .section--esquerda p{
+      color: #fff;
+      font-size: 15px;
+  }
+  .section--direita{
+      width: 500px;
+      text-align: center;
+  }
+  .section--direita img{
+      width: 480px;
+      box-shadow: 0px 5px 10px #333;
+  }
+  .botao{
+    display:inline-block;
+    background-color: #000;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+/* CSS - GASTRONOMIA */
+.sobre-gastronomia
+
+.areaback-gastronomia{
+    width: 100vw;
+    height: 100%;
+    padding: 0%;
+    margin-top: 0%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.section-titulo-gastronomia{
+padding-top: 50px;
+}
+.section-titulo-gastronomia h3 em{
+color: #050505;
+}
+.section-titulo,
+.section-desc-gastronomia{
+text-align: center;
+text-transform: uppercase;
+font-weight: 600;
+color: #050505;
+}
+.section-desc-gastronomia{
+font-size: 12px;
+margin-top: 10px;
+margin-bottom: 40px;
+padding-bottom: 50px;
+}
+.section-body-gastronomia{
+    max-width: 1140px;
+    margin: auto;
+    padding-bottom: 40px;
+    display: flex;
+}
+.section-sobre-gastronomia{
+    display: flex;
+}
+.section--esquerda-gastronomia{
+    flex: 1;
+
+    margin-left: 20px;
+}
+.section--esquerda-gastronomia p{
+    color: #050505;
+    font-size: 15px;
+}
+.section--direita-gastronomia{
+    width: 500px;
+    text-align: center;
+}
+.section--direita-gastronomia img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+
 
 /* CSS - ACOMODAÇÕES */
+.text-acomodacoes p{
+  color:#016956 ;
+}
+
+
 
 main section article div.flex-color {
   display: flex;
