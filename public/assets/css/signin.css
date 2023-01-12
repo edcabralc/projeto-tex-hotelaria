@@ -102,6 +102,11 @@
   display: flex;
   z-index: 1;
 }
+
+.span-required {
+  font-size: 12px;
+  display: none;
+}
 /* end de login */
 
 @media (max-width: 750px) {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entrar</title>
     <link rel="stylesheet" href="../public/assets/css/styles.css" />
+    
   </head>
   <main>
     <section class="sign-in">
@@ -40,27 +41,26 @@
             </ul>
           </nav>
           </div>
-            <form method="get">
+            <form id="form">
             <label 
             for="nome">Endereço de Email</label>
-            <input class="input-text-primary" type="email" name="login" id="login" required />
+            <input class="input-text-primary required" type="email" name="login" id="login"  />
+            <span class="span-required">Email incorreto</span>
             <label for="senha">Senha</label>
-            <input class="input-text-primary" type="password"
+            
+            <input class="input-text-primary required" type="password"
             name="senha"
-            id="senha"
-            required />
+            id="senha"/>
+            <span class="span-required">Senha incorreta </span>
             <div class="sign-in-forgot_pass">
               <a href="recuperacao.html">Esqueceu sua senha?</a> 
             </div>
-            <input 
-            class="btn"
-            type="submit"
-            formaction="../index.html" value="Confirmar"
-            />
+            <button type="submit">Enviar</button>
         </form>
         <div class="sign-in-help">
           <h3>Não possui conta?</h3>
            <a href="register.html">Criar uma nova conta</a></div>
+          
         </div>
             </div>
            </div>
@@ -69,4 +69,5 @@
     </section>
   </main>
   </body>
+  <script src="/public/assets/js/login.js"></script>
 </html>
