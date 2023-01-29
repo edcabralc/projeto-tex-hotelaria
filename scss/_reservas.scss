@@ -1,56 +1,104 @@
+@use "variables" as *;
+@use "mixin" as *;
+
+/* RESERVAS */
 /* SEÇÃO TIPO DE ACOMODAÇÃO */
 .secao-tipo-acomodacao {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+
+  input {
+    accent-color: $primary-green;
+  }
+
+  .preco {
+    font-weight: bold;
+    color: black;
+  }
+
+  p {
+    margin: 1rem 0;
+    color: $paragraph-gray;
+  }
 }
 
-.secao-tipo-acomodacao input {
-  accent-color: #558e60;
+.container {
+  &-tipo-acomodacao {
+    flex: 2;
+  }
+
+  &-titulos-acomodacao img {
+    flex: 1 0 30%;
+    width: 30%;
+    border-radius: 10px;
+  }
+
+  &-resumo-reserva {
+    border: 1px solid $secondary-green;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #eff5f0;
+    height: auto;
+    margin-top: 2.7rem;
+    flex: 1;
+
+    .btn {
+      width: 100%;
+      margin-top: 4rem;
+    }
+
+    .container-listas {
+      font-weight: bold;
+    }
+  }
+
+  &-listas {
+    li {
+      margin: 1rem 0;
+    }
+
+    .preco-total {
+      text-align: right;
+    }
+
+    .add-servicos {
+      border-top: 1px solid #eae6d9;
+      border-bottom: 1px solid #eae6d9;
+      padding-top: 1rem;
+      padding-bottom: 5rem;
+    }
+  }
 }
 
-.secao-tipo-acomodacao .preco {
-  font-weight: bold;
-  color: black;
-}
+.item {
+  &-check {
+    display: none;
+    padding: 5rem 0;
+  }
 
-.secao-tipo-acomodacao p {
-  margin: 1rem 0;
-  color: #686b68;
-}
+  &-label {
+    display: flex;
+    flex: 1;
+    border: 1px solid $secondary-green;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+    margin: 1rem 0;
+    gap: 1rem;
 
-.container-tipo-acomodacao {
-  flex: 2;
-}
-
-.container-titulos-acomodacao img {
-  flex: 1 0 30%;
-  width: 30%;
-  border-radius: 10px;
-}
-
-.item-check {
-  display: none;
-  padding: 5rem 0;
-}
-
-.item-label {
-  display: flex;
-  flex: 1;
-  border: 1px solid #016956;
-  border-radius: 10px;
-  padding: 1rem;
-  background: #fff;
-  margin: 1rem 0;
-  gap: 1rem;
+    img {
+      object-fit: cover;
+    }
+  }
 }
 
 .circle {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  border: 1px solid #016956;
+  border: 1px solid $secondary-green;
   padding: 0.6rem;
   display: flex;
   justify-content: center;
@@ -58,13 +106,9 @@
   position: relative;
 }
 
-.item-label img {
-  object-fit: cover;
-}
-
 .item-check:checked ~ label div {
   background-color: #eff5f0;
-  color: #016956;
+  color: $secondary-green;
 }
 
 .item-check:checked ~ label .circle .checkmark {
@@ -72,50 +116,13 @@
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background-color: #016956;
+  background-color: $secondary-green;
 }
 
 .flex {
   display: flex;
   gap: 1rem;
   align-items: center;
-}
-
-.container-resumo-reserva {
-  border: 1px solid #016956;
-  border-radius: 10px;
-  padding: 1rem;
-  background: #eff5f0;
-  height: auto;
-  margin-top: 2.7rem;
-}
-
-.container-resumo-reserva {
-  flex: 1;
-}
-
-.container-resumo-reserva .btn {
-  width: 100%;
-  margin-top: 4rem;
-}
-
-.container-resumo-reserva .container-listas {
-  font-weight: bold;
-}
-
-.container-listas li {
-  margin: 1rem 0;
-}
-
-.container-listas .preco-total {
-  text-align: right;
-}
-
-.container-listas .add-servicos {
-  border-top: 1px solid #eae6d9;
-  border-bottom: 1px solid #eae6d9;
-  padding-top: 1rem;
-  padding-bottom: 5rem;
 }
 
 .right-reserva {
@@ -125,10 +132,10 @@
 .card-inputs {
   display: flex;
   flex-direction: column;
-}
 
-.card-inputs p {
-  margin: 1rem 0;
+  p {
+    margin: 1rem 0;
+  }
 }
 
 .input-group {
@@ -137,11 +144,11 @@
   width: 50%;
   gap: 1rem;
   margin-bottom: 2rem;
-}
 
-.input-group label {
-  color: #686b68;
-  font-weight: 700;
+  label {
+    color: #686b68;
+    font-weight: 700;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -152,8 +159,14 @@
 }
 
 @media (max-width: 915px) {
-  .container-titulos-acomodacao img {
-    width: 100%;
+  .container {
+    &-titulos-acomodacao img {
+      width: 100%;
+    }
+
+    &-resumo-reserva {
+      width: 100%;
+    }
   }
   .secao-tipo-acomodacao {
     flex-direction: column;
@@ -161,9 +174,7 @@
   .item-label {
     flex-direction: column;
   }
-  .container-resumo-reserva {
-    width: 100%;
-  }
+
   .input-group {
     width: 100%;
   }
@@ -181,3 +192,4 @@
     width: 100%;
   }
 }
+/* FIM RESERVAS */

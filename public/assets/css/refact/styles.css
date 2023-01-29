@@ -1802,6 +1802,7 @@ input.btn {
     width: 100%;
   }
 }
+/* RESERVAS */
 /* SEÇÃO TIPO DE ACOMODAÇÃO */
 .secao-tipo-acomodacao {
   display: flex;
@@ -1809,16 +1810,13 @@ input.btn {
   align-items: flex-start;
   gap: 1rem;
 }
-
 .secao-tipo-acomodacao input {
   accent-color: #558e60;
 }
-
 .secao-tipo-acomodacao .preco {
   font-weight: bold;
   color: black;
 }
-
 .secao-tipo-acomodacao p {
   margin: 1rem 0;
   color: #686b68;
@@ -1827,18 +1825,44 @@ input.btn {
 .container-tipo-acomodacao {
   flex: 2;
 }
-
 .container-titulos-acomodacao img {
   flex: 1 0 30%;
   width: 30%;
   border-radius: 10px;
+}
+.container-resumo-reserva {
+  border: 1px solid #016956;
+  border-radius: 10px;
+  padding: 1rem;
+  background: #eff5f0;
+  height: auto;
+  margin-top: 2.7rem;
+  flex: 1;
+}
+.container-resumo-reserva .btn {
+  width: 100%;
+  margin-top: 4rem;
+}
+.container-resumo-reserva .container-listas {
+  font-weight: bold;
+}
+.container-listas li {
+  margin: 1rem 0;
+}
+.container-listas .preco-total {
+  text-align: right;
+}
+.container-listas .add-servicos {
+  border-top: 1px solid #eae6d9;
+  border-bottom: 1px solid #eae6d9;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
 }
 
 .item-check {
   display: none;
   padding: 5rem 0;
 }
-
 .item-label {
   display: flex;
   flex: 1;
@@ -1848,6 +1872,9 @@ input.btn {
   background: #fff;
   margin: 1rem 0;
   gap: 1rem;
+}
+.item-label img {
+  object-fit: cover;
 }
 
 .circle {
@@ -1860,10 +1887,6 @@ input.btn {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-
-.item-label img {
-  object-fit: cover;
 }
 
 .item-check:checked ~ label div {
@@ -1885,43 +1908,6 @@ input.btn {
   align-items: center;
 }
 
-.container-resumo-reserva {
-  border: 1px solid #016956;
-  border-radius: 10px;
-  padding: 1rem;
-  background: #eff5f0;
-  height: auto;
-  margin-top: 2.7rem;
-}
-
-.container-resumo-reserva {
-  flex: 1;
-}
-
-.container-resumo-reserva .btn {
-  width: 100%;
-  margin-top: 4rem;
-}
-
-.container-resumo-reserva .container-listas {
-  font-weight: bold;
-}
-
-.container-listas li {
-  margin: 1rem 0;
-}
-
-.container-listas .preco-total {
-  text-align: right;
-}
-
-.container-listas .add-servicos {
-  border-top: 1px solid #eae6d9;
-  border-bottom: 1px solid #eae6d9;
-  padding-top: 1rem;
-  padding-bottom: 5rem;
-}
-
 .right-reserva {
   width: 100%;
 }
@@ -1930,7 +1916,6 @@ input.btn {
   display: flex;
   flex-direction: column;
 }
-
 .card-inputs p {
   margin: 1rem 0;
 }
@@ -1942,7 +1927,6 @@ input.btn {
   gap: 1rem;
   margin-bottom: 2rem;
 }
-
 .input-group label {
   color: #686b68;
   font-weight: 700;
@@ -1958,14 +1942,14 @@ input.btn {
   .container-titulos-acomodacao img {
     width: 100%;
   }
+  .container-resumo-reserva {
+    width: 100%;
+  }
   .secao-tipo-acomodacao {
     flex-direction: column;
   }
   .item-label {
     flex-direction: column;
-  }
-  .container-resumo-reserva {
-    width: 100%;
   }
   .input-group {
     width: 100%;
@@ -1982,6 +1966,7 @@ input.btn {
     width: 100%;
   }
 }
+/* FIM RESERVAS */
 /* tela de login */
 .sign-in {
   width: 100vw;
