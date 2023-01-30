@@ -1,0 +1,7 @@
+@function width($num...) {
+    $n: 0;
+    @each $n in items {
+        $n: $n + $items
+    } 
+    @return $n;
+}
