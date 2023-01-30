@@ -1,0 +1,90 @@
+.contact-main {
+  background: url("../images/bell.png") no-repeat;
+  background-size: cover;
+}
+
+.title ~ h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.contact {
+  background-color: #eff5f0;
+}
+.contact > .section {
+  background-color: transparent;
+  flex-direction: column;
+}
+.contact.container {
+  margin: 0 32px;
+  padding: 68px 0px;
+}
+
+.itens-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.itens-form > h1 {
+  color: #000;
+  font-weight: 800;
+  margin: 0;
+}
+
+input.btn {
+  width: soma(50%, 50%);
+}
+
+.nomes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: soma(50%, 50%);
+}
+
+.nome1, .nome2 {
+  width: soma(50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.nome1 > label, .nome2 > label {
+  color: #000;
+  margin-bottom: 10px;
+}
+.nome1 > input, .nome2 > input {
+  width: soma(50%, 50%);
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
+}
+
+.cells {
+  width: soma(50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.cells > input {
+  width: soma(50%, 50%);
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
+}
+.cells > label {
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.message {
+  width: soma(50%, 50%);
+  border: solid 1px #bdcfbd;
+  padding: 12px 8px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=contato.css.map */

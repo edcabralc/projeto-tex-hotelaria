@@ -3,68 +3,68 @@
 @use "contato-functions" as f;
 
 .contact-main {
-  background: url("../images/bell.png") no-repeat;
-  background-size: cover;
+    background: url("../images/bell.png") no-repeat;
+    background-size: cover;
 }
 
 .title {
-  & ~ h3 {
-    @include mx.contact-h3;
-  }
+    & ~ h3 {
+        @include mx.contact-h3;
+    }
 }
 
 .contact {
-  background-color: v.$bgColor-w;
-  & > .section {
-    background-color: transparent;
-    flex-direction: column;
-  }
-  &.container {
-    margin: 0 32px;
-    padding: 68px 0px;
-  }
+    background-color: v.$bgColor-w;
+    & > .section {
+        background-color: transparent;
+        flex-direction: column;
+    }
+    &.container {
+        margin: 0 32px;
+        padding: 68px 0px;
+    }
 }
 
 .itens-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  & > h1 {
-    @include mx.contact-h1;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & > h1 {
+        @include mx.contact-h1;
+    }
 }
 
 input {
-  &.btn {
-    width: soma(50%, 50%);
-  }
+    &.btn {
+        width: soma(50%, 50%);
+    }
 }
 
 .nomes {
-  @if background-color = v.$bgColor-w {
-    display: flex;
-    flex-direction: row;
-    gap: v.$contact-gap;
-    width: soma(50%, 50%);
-  }
+    @if v.$bgColor-w {
+        display: flex;
+        flex-direction: row;
+        gap: v.$contact-gap;
+        width: soma(50%, 50%);
+    }
 }
 
 .nome1 {
-  @include mx.contact-name;
+    @include mx.contact-name;
 }
 
 .nome2 {
-  @extend .nome1;
+    @extend .nome1;
 }
 
 .cells {
-  @include mx.contact-cells;
+    @include mx.contact-cells;
 }
 
 .message {
-  width: soma(50%, 50%);
-  border: v.$contact-border;
-  padding: 12px 8px;
-  border-radius: 6px;
+    width: soma(50%, 50%);
+    border: v.$contact-border;
+    padding: 12px 8px;
+    border-radius: 6px;
 }
