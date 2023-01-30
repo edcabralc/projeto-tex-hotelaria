@@ -1,0 +1,47 @@
+@mixin contact-h1 {
+  color: #000;
+  font-weight: 800;
+  margin: 0;
+}
+
+@mixin contact-h3 {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+@mixin contact-name {
+  width: soma(50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  & > label {
+    color: #000;
+    margin-bottom: 10px;
+  }
+  & > input {
+    width: soma(50%, 50%);
+    border: solid 1px #bdcfbd;
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+}
+
+@mixin contact-cells {
+  width: soma(50%, 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px 0px;
+  & > input {
+    width: soma(50%, 50%);
+    border: solid 1px #bdcfbd;
+    padding: 12px 8px;
+    border-radius: 6px;
+  }
+  & > label {
+    color: #000;
+    margin-bottom: 10px;
+  }
+}
